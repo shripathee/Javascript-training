@@ -119,4 +119,5 @@ function zoom(e){
     cur_exp=this;
     table.style.height="100%";
     table.style.width="100%";
+    
 }
