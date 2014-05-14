@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Javascript Objects</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script type="text/javascript" src="inventory.js"></script>
+</head>
+<body>
+    <header>
+    <h1 style="text-align:center">Inventory Operations</h1>
+    </header>
+    <article>
+        <section style="margin:3%">
+            <input class="btn btn-primary" type="button" value="View Previous Transactions" onclick="showPrevious()" style="float:right">
+        </section>
+        <section style="margin:3%">
+            <input class="btn btn-primary" type="button" value="Add new item" onclick="showInput()">
+        </section>
+        <section class="form-group" style="margin:3%;display:none" id="input">
+            <form name="form1" >
+                <label>Enter item name:</label><br>
+                <input id="iname" type="text"><br>
+                <label>Enter quantity:</label><br>
+                <input id="iquantity" type="number"><br>
+                <label>Enter price of the item:</label><br>
+                <input id="iprice" type="number"><br>
+                <input type="button" value="Add" onclick="addItem()">
+            </form>
+        </section>
+        <section>
+            <table class="table" id="results">
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <footer style="margin-top:20%"><center><button onclick="createBill()" class="btn btn-primary"><h4>Create Bill</h4></button></center></footer>
+</body>
+</html>
